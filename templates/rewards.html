@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Rewards</title>
+{#    <script>#}
+{#        jQuery(document).ready(function($) {#}
+{#    $(".clickable-row").click(function() {#}
+{#        window.location = $(this).data("href");#}
+{#    });#}
+{#</script>#}
+</head>
+
+{% extends 'includes/layout.html'%}
+{% block body %}
+
+
+  <div class="content-wrapper">
+       <div class="container">
+<div class="container">
+{#        <img src="Flask_Project/EARN MORE REWARDS.jpg">#}
+
+  <div class="w-100 p-3">
+
+    <div  class="alert alert-dark" align="center" >
+    REDEMPTION THIS WEEK
+        <br><h1>10</h1>
+        <a href="transaction"> <span style="color:red">+4 </span> </a>from last week
+
+    </div>
+{#   <div  class="alert alert-dark" align="center">#}
+{##}
+{#    </div>#}
+  </div>
+
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">My Rewards</a>
+        </li>
+        <li class="breadcrumb-item active">Rewards</li>
+      </ol>
+      <!-- Example DataTables Card-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table">Your Cards Points</i>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Account Number</th>
+                    <th>Card Number</th>
+                    <th>Redeem Now</th>
+                  <th></th>
+
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td class='clickable-row'  data-href="transaction">731-089632-233</td>
+                  <td >1230 8956 4321 1543</td>
+                    <td > <a href="redeem" >Redeem Now</a></td>
+
+                    <td>
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">View Reward Detail</button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h4 class="modal-title">Account No: 731-089632-233</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body">
+                      <p>Card:  DBS Takashimaya Visa Card</p>
+                        <p>So far you have redeem <span style="color: red">4</span> point balance in your account.</p>
+                        <p>Expiry Date: 01 January 2018</p>
+
+                    </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div></div></div></div></td>
+                </tr>
+
+
+                <tr class='clickable-row' data-href='transaction'>
+                  <td>081-089632-234</td>
+                  <td>7654 9000 4321 0987</td>
+                    <td > <a href="redeem" >Redeem Now</a></td>
+
+                <td>
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal123">View Reward Detail</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal123" role="dialog">
+                    <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h4 class="modal-title">Account No:081-089632-234</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body">
+                     <p>Card:  OCBC Takashimaya American Express Card</p>
+                        <p>So far you have redeem <span style="color: red">2</span> point balance in your account.</p>
+                        <p>Expiry Date: 09 Febuary 2018</p>
+                    </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div></div></div></div>
+                    </td>
+                </tr>
+
+                <tr class='clickable-row' data-href='transaction'>
+                  <td>098-123456-987</td>
+                  <td>7890 1234 9867 6789</td>
+                                        <td > <a href="redeem" >Redeem Now</a></td>
+
+                    <td>
+                  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal321">View Reward Detail</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal321" role="dialog">
+                    <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h4 class="modal-title">Account No: 098-123456-987</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body">
+                        <p>Card: POSB Black VISA Card</p>
+                        <p>So far you have redeem <span style="color: red">4</span> point balance in your account.</p>
+                        <p>Expiry Date: 03 January 2018</p>
+                    </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div></div></div></div></td>
+                </tr>
+
+                <tr class='clickable-row' data-href='transaction'>
+                    <td>876-766542-890</td>
+                  <td>1237 6532 4321 1543</td>
+                    <td > <a href="redeem" >Redeem Now</a></td>
+
+
+                    <td>
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal098">View Reward Detail</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal098" role="dialog">
+                    <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h4 class="modal-title">Account No: 876-766542-890</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body">
+                        <p>Card: POSB Black VISA Card</p>
+                        <p>So far you have redeem <span style="color: red">1</span> point balance in your account.</p>
+                        <p>Expiry Date: 03 January 2018</p>
+
+
+                    </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div></div></div></div></td>
+                </tr>
+              <tr class='clickable-row' data-href='transaction'>
+                  <td>0984-089632-908</td>
+                  <td>1230 1234 7975 1543</td>
+                    <td > <a href="redeem" >Redeem Now</a></td>
+
+
+<td>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal890">View Reward Detail</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal890" role="dialog">
+                    <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h4 class="modal-title">Account No: 0984-089632-908</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body">
+                       <p>Card: POSB Black VISA Card</p>
+                        <p>So far you have redeem <span style="color: red">1</span> point balance in your account.</p>
+                        <p>Expiry Date: 03 January 2018</p>
+
+
+                    </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div></div></div></div>
+
+</td>
+              </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+          <div  class="alert alert-green" width = "70%" align="RIGHT" >
+             <b> TOTAL ACCUMULATED POINT IS IN ALL OF THE ACCOUNT <span style="color:red"> 12</span></b>
+
+
+
+         </div>
+
+          <div>
+              <h4><b>Notes: </b></h4>
+              <ul>
+                  <li>*Points are calculated on each transaction and rounded down to the nearest whole number.</li>
+                  <li>Points earned by Supplementary Cardmembers will be accumulated in the Principal Cardmember's account.</li>
+                  <li>Supplementary Cardmembers may utilise the Rewards Vouchers redeemed by the Principal Card member.</li>
+                  <li>Points will not be awarded for AXS terminals/online/iBanking bill payment transactions, fund transfer transactions, cash advances, annual fees, interest, late payment charges, all fees charged. </li>
+              </ul>
+
+              <h2> <b>We welcome your feedbacks</b></h2>
+              <hr>
+
+            		<label for="happy" >Information is easy to find and understand</label>
+    		<div >
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm active" data-toggle="happy" data-title="Y">YES</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="happy" data-title="N">NO</a>
+    				</div>
+    				<input type="hidden" name="happy" id="happy"><br>
+            </div>
+                <label for="happy" >Information is useful to answer your inquiries completely</label>
+    		<div >
+                    <div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm active" data-toggle="happy" data-title="Y">YES</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="happy" data-title="N">NO</a>
+    				</div>
+    				<input type="hidden" name="happy" id="happy"><br>
+                    </div>
+            </div>
+            <label for="happy" >Suggestions to  improve:  </label>
+    		<div >
+                   <textarea class="form-control" height=' 15px' width = '40px'rows="5" id="comment"></textarea><br>
+                <br>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal789">Submit</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal789" role="dialog">
+                    <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h4 class="modal-title">Feedback</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body">
+                       <p>Feedback Sent.</p>
+                        <p>Thank You for the feedback</p>
+                        <p>Have a nice day.</p>
+
+
+                    </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div></div></div></div>
+
+<br><br>
+            </div>
+              </div>
+          </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>
+    </div>
+  </div>
+        {% endblock %}
+
+</html>

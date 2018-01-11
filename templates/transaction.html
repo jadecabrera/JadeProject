@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction</title>
+
+</head>
+<body>
+{% extends 'includes/layout.html'%}
+{% block body %}
+
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="rewards">Rewards</a>
+        </li>
+        <li class="breadcrumb-item active">Transaction</li>
+      </ol>
+      <!-- Example DataTables Card-->
+
+
+
+
+
+{#              <tfoot>#}
+{#                <tr>#}
+{#                  <th>Date</th>#}
+{#                  <th>Category</th>#}
+{#                  <th>Name</th>#}
+{#                  <th>Amount</th>#}
+{#                  <th>Expiry Date</th>#}
+{#                  <th>Reward</th>#}
+{##}
+{#                </tr>#}
+{#              </tfoot>#}
+
+
+
+              <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i>Latest 4 Redemption</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Category</th>
+                  <th>Name</th>
+                  <th>Amount</th>
+                  <th>Expiry Date</th>
+                  <th>Reward</th>
+                </tr>
+              </thead>
+                <tbody>
+               <tr> <td>12 June 2017</td>
+                  <td>Beauty and Wellness</td>
+                  <td>Sephora</td>
+                  <td>$7.47</td>
+                  <td>6 November 2017</td>
+                  <td>3 points</td>
+                </tr>
+                <tr>
+               <td>09 August 2017</td>
+                  <td>Attraction</td>
+                  <td>Night Safari</td>
+                  <td>$96.00</td>
+                  <td>1 December 2017</td>
+                  <td>3 points</td>
+                </tr>
+                <tr>
+                  <td>03 March</td>
+                  <td>Food and Beverage</td>
+                  <td>Texas Chicken</td>
+                  <td>$4.65</td>
+                  <td>4 December</td>
+                  <td>5 points</td>
+                </tr>
+
+              <tr>
+               <td>09 January 2017</td>
+                  <td>Clothing</td>
+                  <td>Zara</td>
+                  <td>$700.00</td>
+                  <td>14 December 2017</td>
+                  <td>5 points</td>
+                </tr>
+
+
+               </tbody>
+{#              <tfoot>#}
+{#                <tr>#}
+{#                  <th>Date</th>#}
+{#                  <th>Category</th>#}
+{#                  <th>Name</th>#}
+{#                  <th>Amount</th>#}
+{#                  <th>Expiry Date</th>#}
+{#                  <th>Reward</th>#}
+{##}
+{#                </tr>#}
+{#              </tfoot>#}
+
+
+
+            </table>
+
+          </div>
+        </div>
+            <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i>10 Seen Redemption</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Category</th>
+                  <th>Name</th>
+                  <th>Amount</th>
+                  <th>Expiry Date</th>
+                  <th>Reward</th>
+                </tr>
+              </thead>
+        <tbody>
+               <tr> <td>13 June 2017</td>
+                  <td>Food </td>
+                  <td>Old C Chang Kee</td>
+                  <td>$7.47</td>
+                  <td>6 November 2017</td>
+                  <td>5 points</td>
+                </tr>
+                <tr>
+               <td>09 August 2017</td>
+                  <td>Attraction</td>
+                  <td>Night Safari</td>
+                  <td>$96.00</td>
+                  <td>1 December 2017</td>
+                  <td>4 points</td>
+                </tr>
+                <tr>
+                  <td>03 March</td>
+                  <td>Food and Beverage</td>
+                  <td>Texas Chicken</td>
+                  <td>$4.65</td>
+                  <td>5 December</td>
+                  <td>2 points</td>
+                </tr>
+
+              <tr>
+               <td>09 January 2017</td>
+                  <td>Clothing</td>
+                  <td>Zara</td>
+                  <td>$700.00</td>
+                  <td>8 December 2017</td>
+                  <td>9 points</td>
+                </tr>
+              <tr>
+               <td>09 August 2017</td>
+                  <td>Hardware</td>
+                  <td>Tool Kit</td>
+                  <td>$700.00</td>
+                  <td>7 December 2017</td>
+                  <td>10 points</td>
+                </tr>
+
+              <tr>
+               <td>09 July 2017</td>
+                  <td>Gadget</td>
+                  <td>Earphones</td>
+                  <td>$700.00</td>
+                  <td>5 December 2017</td>
+                  <td>15 points</td>
+                </tr>
+
+              <tr>
+               <td>09 June 2017</td>
+                  <td>Food</td>
+                  <td>Texas Chicken</td>
+                  <td>$700.00</td>
+                  <td>9 December 2017</td>
+                  <td>10 points</td>
+                </tr>
+
+              <tr>
+               <td>09 May 2017</td>
+                  <td>Pet Shop</td>
+                  <td>Dog</td>
+                  <td>$700.00</td>
+                  <td>2 December 2017</td>
+                  <td>10 points</td>
+                </tr>
+
+              <tr>
+               <td>09 April 2017</td>
+                  <td>Food</td>
+                  <td>Mc Donalds</td>
+                  <td>$700.00</td>
+                  <td>4 December 2017</td>
+                  <td>90 points</td>
+                </tr>
+
+              <tr>
+               <td>09  March 2017</td>
+                  <td>Clothing</td>
+                  <td>H&M</td>
+                  <td>$700.00</td>
+                  <td>1 December 2017</td>
+                  <td>30 points</td>
+                </tr>
+            </tbody>
+            </table>
+          </div>
+        </div>
+            </div>
+
+      </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Your Website 2017</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+        {% endblock %}
+
+</html>
